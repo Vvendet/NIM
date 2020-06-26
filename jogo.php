@@ -22,7 +22,7 @@ function campeonato(){
             $computador = $computador + 1;
 
     # Exibe o placar final:
-    echo("Placar final: Você  {} x {}  Computador".format(usuario, computador));
+    echo("Placar final: Você  {} x {}  Computador".format($usuario, $computador));
 }
 
 function jogo(){
@@ -45,125 +45,125 @@ function partida(){
     if $n == 2 and $m == 3:
         echo("Computador começa!");
         while $n >0:
-            $jogada = computador_escolhe_jogada(n, m);
-            echo("O computador tirou ",jogada," peças!");           
+            $jogada = computador_escolhe_jogada($n, $m);
+            echo("O computador tirou ",$jogada," peças!");           
             $n = $n - $jogada
-            echo("Agora restam ", n," peças no tabuleiro!");
+            echo("Agora restam ", $n," peças no tabuleiro!");
             if $n == 0:
                 echo("Computador venceu!");
 
             if $n > 0:
-                $jogada = usuario_escolhe_jogada(n, m);
+                $jogada = usuario_escolhe_jogada($n, $m);
                 $n = $n-$jogada ;       
                 echo("Agora restam ", n," peças no tabuleiro!");
                 if $n == 0:
                     echo("Voce venceu!");
 
-    elseif n<m:
-        while n < m:
+    elseif $n<$m:
+        while $n < $m:
             echo("entrada inválida");
-            m = int(input("Limite de peças por jogada? " ))
+            $m = int(input("Limite de peças por jogada? " ))
 
-    elseif  n == m: 
+    elseif  $n == $m: 
         echo("Computador começa!");
-        while n >0:
-            jogada = computador_escolhe_jogada(n, m)
-            echo("O computador tirou ",jogada," peças!");           
-            n = n - jogada
-            echo("Agora restam ", n," peças no tabuleiro!");
-            if n == 0:
+        while $n >0:
+            $jogada = computador_escolhe_jogada($n, $m)
+            echo("O computador tirou ",$jogada," peças!");           
+            $n = $n - $jogada
+            echo("Agora restam ", $n," peças no tabuleiro!");
+            if $n == 0:
                 echo("Computador venceu!");
 
-            if n > 0:
-                jogada = usuario_escolhe_jogada(n, m)
-                n = n-jogada        
+            if $n > 0:
+                $jogada = usuario_escolhe_jogada($n, $m)
+                $n = $n-$jogada        
                 echo("Agora restam ", n," peças no tabuleiro!");
-                if n == 0:
+                if $n == 0:
                     echo("Voce venceu!");
 
 
-    elseif n == 9 and m == 2:
+    elseif $n == 9 and $m == 2:
         echo("Você começa!");
-        while n > 0:  
-            jogada = usuario_escolhe_jogada(n, m)
-            n = n-jogada  
+        while $n > 0:  
+            $jogada = usuario_escolhe_jogada($n, $m)
+            $n = $n-$jogada  
             
-            echo("Agora restam ", n , " peças no tabuleiro");
-            if n == 0:
+            echo("Agora restam ", $n , " peças no tabuleiro");
+            if $n == 0:
                             echo("Você venceu!") ;
-            if n > 0:
-                jogada = computador_escolhe_jogada(n, m)
-                echo("Computador removeu ", jogada, " peças.")  ;       
-                n = n - jogada
-                echo("Agora restam ", n," peças no tabuleiro!");
-                if n == 0:
+            if $n > 0:
+                $jogada = computador_escolhe_jogada($n, $m)
+                echo("Computador removeu ", $jogada, " peças.")  ;       
+                $n = $n - $jogada
+                echo("Agora restam ", $n," peças no tabuleiro!");
+                if $n == 0:
                     echo("Computador venceu!");
 
-    elseif n == 11 and m == 3:
+    elseif $n == 11 and $m == 3:
         echo("Computador começa!");
-        while n >0:
-            jogada = computador_escolhe_jogada(n, m)
-            echo("O computador tirou ",jogada," peças!")  ;         
-            n = n - jogada
-            echo("Agora restam ", n," peças no tabuleiro!");
-            if n == 0:
+        while $n >0:
+            $jogada = computador_escolhe_jogada($n, $m)
+            echo("O computador tirou ".$jogada." peças!")  ;         
+            $n = $n - $jogada
+            echo("Agora restam ", $n," peças no tabuleiro!");
+            if $n == 0:
                 echo("Computador venceu!");
 
-            if n > 0:
-                jogada = usuario_escolhe_jogada(n, m)
-                n = n-jogada        
-                echo("Agora restam ", n," peças no tabuleiro!");
-                if n == 0:
+            if $n > 0:
+                $jogada = usuario_escolhe_jogada($n, $m)
+                $n = $n-$jogada        
+                echo("Agora restam ", $n," peças no tabuleiro!");
+                if $n == 0:
                     echo("Voce venceu!");
 
 
-    elseif n == 5 and m == 3:
+    elseif $n == 5 and $m == 3:
         echo("Computador começa!");
-        while n >0:
-            jogada = computador_escolhe_jogada(n, m)
-            echo("O computador tirou ",jogada," peças!")  ;         
-            n = n - jogada
-            echo("Agora restam ", n," peças no tabuleiro!");
-            if n == 0:
+        while $n >0:
+            $jogada = computador_escolhe_jogada($n, $m)
+            echo("O computador tirou ",$jogada," peças!")  ;         
+            $n = $n - $jogada
+            echo("Agora restam ", $n," peças no tabuleiro!");
+            if $n == 0:
                 echo("Computador venceu!");
 
-            if n > 0:
-                jogada = usuario_escolhe_jogada(n, m)
-                n = n-jogada        
-                echo("Agora restam ", n," peças no tabuleiro!");
-                if n == 0:
+            if $n > 0:
+                $jogada = usuario_escolhe_jogada($n, $m)
+                $n = $n-$jogada        
+                echo("Agora restam ", $n," peças no tabuleiro!");
+                if $n == 0:
                     echo("Voce venceu!");
 
 
 
             
-    elseif n%(m+1) or n%m==0:
+    elseif $n%($m+1) or $n%$m==0:
         echo("Você começa!");
-        while n > 0:  
-            jogada = usuario_escolhe_jogada(n, m)
-            n = n-jogada  
+        while $n > 0:  
+            $jogada = usuario_escolhe_jogada($n, $m)
+            $n = $n-$jogada  
             
-            echo("Agora restam ", n , " peças no tabuleiro");
-            if n == 0:
+            echo("Agora restam ", $n , " peças no tabuleiro");
+            if $n == 0:
                             echo("Você venceu!") ;
-            if n > 0:
-                jogada = computador_escolhe_jogada(n, m)
-                echo("Computador removeu ", jogada, " peças.") ;        
-                n = n - jogada
-                echo("Agora restam ", n," peças no tabuleiro!");
-                if n == 0:
+            if $n > 0:
+                $jogada = computador_escolhe_jogada($n, $m)
+                echo("Computador removeu ", $jogada, " peças.") ;        
+                $n = $n - $jogada
+                echo("Agora restam ", $n," peças no tabuleiro!");
+                if $n == 0:
                     echo("Computador venceu!");
     echo("");
     echo("Fim da partida");
 }   
-function usuario_escolhe_jogada(n,m){
+function usuario_escolhe_jogada($n,$m){
     $jogada = int(input("Quantas peças você vai tirar? "))
     while $jogada > $m or $jogada <= 0 or $jogada > $n:
         echo("entrada inválida");
         $jogada = int(input("Quantas peças você vai tirar? "));
     return $jogada
 }
-function computador_escolhe_jogada(n, m){
+function computador_escolhe_jogada($n, $m){
 
     # Vez do computador:
     echo("Vez do computador!");
@@ -177,7 +177,7 @@ function computador_escolhe_jogada(n, m){
     else:
 
         # Verifica se é possível deixar uma quantia múltipla de m+1:
-        $quantia = $n % (m+1);
+        $quantia = $n % ($m+1);
 
         if $quantia > 0:
             return $quantia;
