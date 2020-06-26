@@ -8,19 +8,20 @@ function campeonato(){
     $computador = 0;
 
     # Executa 3 vezes:
-    for $_ in range(3):
+    for ($_ in range(3)){
 
         # Executa a partida:
         $vencedor = partida();
 
         # Verifica o resultado, somando a pontuação:
-        if $vencedor == 1:
+        if ($vencedor == 1){
             # Usuário venceu:
             $usuario = $usuario + 1;
         else:
             # Computador venceu:
             $computador = $computador + 1;
-
+        }
+    }
     # Exibe o placar final:
     echo("Placar final: Você  {} x {}  Computador".format($usuario, $computador));
 }
