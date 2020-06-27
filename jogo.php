@@ -28,17 +28,20 @@ function campeonato(){
 
 function jogo(){
     echo("Bem-vindo ao jogo do NIM! Escolha:");
-    $escolha = int(input("1 - Partida isolada  2 - Campeonato:  "));
-    if $escolha == 1:;
+    $escolha = $_GET['escolhe'];
+    if ($escolha == '1'){
         return partida();
-    elseif $escolha == 2:
+    }
+    elseif ($escolha == 2){
         campeonato();
-    else:
+    }
+    else{
         
         while $escolha != 1 or $escolha != 2:
             echo("Entrada inválida");
-            $escolha = int(input("1 - Partida isolada  2 - Campeonato:  "))
-}
+            $escolha = int(input("1 - Partida isolada  2 - Campeonato:  "))]
+    }
+}   
 
 function partida(){
     $n = int(input("Quantas peças? "))
