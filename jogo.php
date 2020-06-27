@@ -230,15 +230,29 @@ function computador_escolhe_jogada($n, $m){
 }
         
 
-jogo();
+
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jogo NIM!</title>
+   
+    <meta charset="UTF-8"/>
+    <title>Jogo do NIM!</title>
+    <link rel="stylesheet" type="text/css" href="mold.css" media="screen" />
+    <style type="text/css">
+
+        
+    </style>
+    <script src=""></script>
 </head>
 <body>
+    <div id="fundo-externo">
+        <div id="fundo">
+            <img src="img.jpg" alt=""/>
+        </div>
+    </div>
+    <div id="site">
 
 </body>
 </html>
